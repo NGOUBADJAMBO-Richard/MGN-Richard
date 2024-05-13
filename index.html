@@ -615,6 +615,7 @@
 
               <div class="col-lg-6">
                 <form
+                  id="contact-form"
                   action="forms/contact.php"
                   method="post"
                   role="form"
@@ -681,6 +682,7 @@
 
                     <div class="mt-0">
                       <input
+                        id="submit"
                         type="submit"
                         class="btn btn-defeault btn-send"
                         value="Send message"
@@ -717,6 +719,13 @@
           </ul>
         </div>
 
+        <div class="contact-contact">
+          <ul class="contact-details">
+            <li><span>+88 01912704287</span></li>
+            <li><span>example@example.com</span></li>
+          </ul>
+        </div>
+
         <p>&copy; Copyrights M.G.N - 2024 . All rights reserved.</p>
       </div>
     </div>
@@ -729,6 +738,17 @@
     ></a>
 
     <!-- Vendor JS Files -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("qA6ZyVSIrpy0KLG8O");
+      })();
+    </script>
+    <script type="text/javascript" src="./assets/js/email.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
