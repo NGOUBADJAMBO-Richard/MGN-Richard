@@ -360,12 +360,13 @@
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/hero-bg.jpg" class="img-fluid img-thumbnail" style="height: 15rem; width: 25rem" alt="" />
+            <img src="assets/img/portfolio/hero-bg.jpg" class="img-fluid img-thumbnail"
+              style="height: 15rem; width: 25rem" alt="" />
             <div class="portfolio-info">
               <h4>MENTOR</h4>
               <p>MENTOR is an online platform offering a wide range of courses across various fields, designed to help
                 individuals enhance their skills and knowledge.</p>
-              <a href="assets/img/portfolio/hero-bg.jpg"  data-gallery="portfolioGallery"
+              <a href="assets/img/portfolio/hero-bg.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
               <a href="mentor.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
@@ -379,54 +380,54 @@
     <div id="experience" class="text-left paddsection">
       <div class="container">
         <div class="section-title text-center">
-          <h2>experiences</h2>
+          <h2>Professional Experiences</h2>
+          <p class="lead text-muted">A showcase of my journey in software development</p>
         </div>
       </div>
 
       <div class="container">
-        <div class="journal-block">
+        <div class="experience-block">
           <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-                <a href="blog-single.html"><img src="assets/img/blog-post-1.jpg" class="img-responsive" alt="img" /></a>
-
-                <div class="journal-txt">
-                  <h4>
-                    <a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a>
-                  </h4>
-                  <p class="separator">
-                    To an English person, it will seem like simplified English
-                  </p>
+            <!-- Experience 1 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="experience-card shadow-sm">
+                <div class="experience-img-container">
+                  <img src="assets/img/experience-1.jpg" class="img-fluid rounded" alt="Software Engineer Experience" />
+                </div>
+                <div class="experience-txt p-4">
+                  <h4 class="text-primary">Software Engineer at TechCorp</h4>
+                  <p class="text-muted">Led a team of developers to build scalable web applications, improving user
+                    experience by 30%. Worked on various projects using JavaScript, React, and Node.js.</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-                <a href="blog-single.html"><img src="assets/img/blog-post-2.jpg" class="img-responsive" alt="img" /></a>
-
-                <div class="journal-txt">
-                  <h4>
-                    <a href="blog-single.html">WE'RE GONA MAKE DREAMS COMES</a>
-                  </h4>
-                  <p class="separator">
-                    To an English person, it will seem like simplified English
-                  </p>
+            <!-- Experience 2 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="experience-card shadow-sm">
+                <div class="experience-img-container">
+                  <img src="assets/img/experience-2.jpg" class="img-fluid rounded"
+                    alt="Frontend Developer Experience" />
+                </div>
+                <div class="experience-txt p-4">
+                  <h4 class="text-primary">Frontend Developer at CreativeStudio</h4>
+                  <p class="text-muted">Designed and implemented responsive, user-friendly interfaces for multiple
+                    websites. Improved mobile performance and ensured cross-platform consistency.</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-                <a href="blog-single.html"><img src="assets/img/blog-post-3.jpg" class="img-responsive" alt="img" /></a>
-
-                <div class="journal-txt">
-                  <h4>
-                    <a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a>
-                  </h4>
-                  <p class="separator">
-                    To an English person, it will seem like simplified English
-                  </p>
+            <!-- Experience 3 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="experience-card shadow-sm">
+                <div class="experience-img-container">
+                  <img src="assets/img/experience-3.jpg" class="img-fluid rounded"
+                    alt="Full Stack Developer Experience" />
+                </div>
+                <div class="experience-txt p-4">
+                  <h4 class="text-primary">Full Stack Developer at InnovateX</h4>
+                  <p class="text-muted">Led the development of a dynamic e-commerce platform, integrated payment
+                    gateways, and improved overall performance by 25%.</p>
                 </div>
               </div>
             </div>
@@ -434,6 +435,51 @@
         </div>
       </div>
     </div>
+
+    <style>
+      .experience-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .experience-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .experience-img-container {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .experience-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+
+      .experience-card:hover .experience-img-container img {
+        transform: scale(1.05);
+      }
+
+      .experience-txt {
+        text-align: left;
+      }
+
+      .experience-txt h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .experience-txt p {
+        margin-bottom: 0;
+      }
+    </style>
+
     <!-- End Journal Section -->
 
     <!-- ======= Contact Section ======= -->
