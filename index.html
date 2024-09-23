@@ -51,18 +51,17 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li>
-            <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
-          </li>
-          <li>
             <a class="nav-link scrollto" href="#experience">Experience</a>
           </li>
-          <!-- <li class="dropdown">
-              <a href="#"
-                ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown">
+          <li>
+            <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#technical-skills">Technical Skills</a></li>
+              <!-- <li class="dropdown">
                   <a href="#"
                     ><span>Deep Drop Down</span>
                     <i class="bi bi-chevron-right"></i
@@ -74,17 +73,21 @@
                     <li><a href="#">Deep Drop Down 4</a></li>
                     <li><a href="#">Deep Drop Down 5</a></li>
                   </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li> -->
+                </li> -->
+              <li><a href="#certifications-education">Certifications</a></li>
+              <li><a href="#blog-publications">Blogs and Publications</a></li>
+              <li><a href="#testimonials-references">Testimonials and References</a></li>
+            </ul>
+          </li>
+
           <!-- <li class="nav-link">
               <a class="nav-link" href="#resume">Resume</a>
             </li> -->
           <li class="nav-link">
             <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-link"></li>
+          <a class="nav-link" href="#download-cv">CV</a>
           </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -165,7 +168,6 @@
       </div>
     </div>
     <!-- End About Section -->
-
 
     <!-- ======= Services Section ======= -->
     <div id="services">
@@ -264,6 +266,113 @@
     </div>
     <!-- End Services Section -->
 
+    <!-- ======= Experience Section ======= -->
+    <div id="experience" class="text-left paddsection">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Professional Experiences</h2>
+          <p class="lead text-muted">A showcase of my journey in software development</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="experience-block">
+          <div class="row">
+            <!-- Experience 1 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="experience-card shadow-sm">
+                <div class="experience-img-container">
+                  <img src="assets/img/portfolio/webdevelopper.jpeg" class="img-fluid rounded"
+                    alt="Software Engineer Experience" />
+                </div>
+                <div class="experience-txt p-4">
+                  <h4 class="text-primary">Web Developer at IDC_Group</h4>
+                  <span>Apr 2024 - Jul 2024</span>
+                  <p class="text-muted">In charge of designing and programming sites, applications and web platforms and
+                    creating new features and sometimes ensuring the maintenance of the developed sites.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="experience-card shadow-sm">
+                <div class="experience-img-container">
+                  <img src="assets/img/portfolio/callcanter.jpeg" class="img-fluid rounded"
+                    alt="Frontend Developer Experience" />
+                </div>
+                <div class="experience-txt p-4">
+                  <h4 class="text-primary">Account Manager at CallCenter</h4>
+                  <span>Sept 2023 - Dec 2023</span>
+                  <p class="text-muted">Responsible for a client portfolio to be developed, managed and retained.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="experience-card shadow-sm">
+                <div class="experience-img-container">
+                  <img src="assets/img/experience-3.jpg" class="img-fluid rounded"
+                    alt="Full Stack Developer Experience" />
+                </div>
+                <div class="experience-txt p-4">
+                  <h4 class="text-primary">Full Stack Developer at InnovateX</h4>
+                  <p class="text-muted">Led the development of a dynamic e-commerce platform, integrated payment
+                    gateways, and improved overall performance by 25%.</p>
+                </div>
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .experience-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .experience-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .experience-img-container {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .experience-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+
+      .experience-card:hover .experience-img-container img {
+        transform: scale(1.05);
+      }
+
+      .experience-txt {
+        text-align: left;
+      }
+
+      .experience-txt h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .experience-txt p {
+        margin-bottom: 0;
+      }
+    </style>
+    <!-- ======= End Experience Section ======= -->
 
     <!-- ======= Portfolio Section ======= -->
     <div id="portfolio" class="paddsection">
@@ -376,114 +485,189 @@
     </div>
     <!-- End Portfolio Section -->
 
-    <!-- ======= Experience Section ======= -->
-    <div id="experience" class="text-left paddsection">
+    <!-- Technical Skills Section -->
+    <div id="technical-skills" class="paddsection bg-light">
       <div class="container">
-        <div class="section-title text-center">
-          <h2>Professional Experiences</h2>
-          <p class="lead text-muted">A showcase of my journey in software development</p>
+        <div class="section-title text-center mb-5">
+          <h2 class="display-4">Technical Skills</h2>
+        </div>
+        <div class="row justify-content-center">
+
+          <!-- Skills Column 1 -->
+          <div class="col-md-5 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <i class="fas fa-code text-primary"></i> HTML5, CSS3, JavaScript
+                  </li>
+                  <li class="mb-3">
+                    <i class="fab fa-react text-primary"></i> React.js, Node.js, Express.js
+                  </li>
+                  <li class="mb-3">
+                    <i class="fab fa-php text-primary"></i> PHP, Laravel, Symfony
+                  </li>
+                  <li class="mb-3">
+                    <i class="fas fa-database text-primary"></i> MySQL, MongoDB, PostgreSQL
+                  </li>
+                  <li class="mb-3">
+                    <i class="fas fa-toolbox text-primary"></i> Git, Docker, Jenkins
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Column 2 -->
+          <div class="col-md-5 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <i class="fas fa-mobile-alt text-primary"></i> Responsive Design & UX/UI
+                  </li>
+                  <li class="mb-3">
+                    <i class="fas fa-cloud text-primary"></i> API Integration & RESTful Services
+                  </li>
+                  <li class="mb-3">
+                    <i class="fas fa-code-branch text-primary"></i> Version Control with Git
+                  </li>
+                  <li class="mb-3">
+                    <i class="fas fa-cloud-upload-alt text-primary"></i> Cloud Services (AWS, GCP)
+                  </li>
+                  <li>
+                    <i class="fas fa-project-diagram text-primary"></i> Agile & Scrum Methodologies
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+    </div>
+    <!-- End Technical Skills Section -->
 
+    <!-- Certifications and Education Section -->
+    <div id="certifications-education" class="paddsection bg-light">
       <div class="container">
-        <div class="experience-block">
-          <div class="row">
-            <!-- Experience 1 -->
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="experience-card shadow-sm">
-                <div class="experience-img-container">
-                  <img src="assets/img/portfolio/webdevelopper.jpeg" class="img-fluid rounded"
-                    alt="Software Engineer Experience" />
-                </div>
-                <div class="experience-txt p-4">
-                  <h4 class="text-primary">Web Developer at IDC_Group</h4>
-                  <span>Apr 2024 - Jul 2024</span>
-                  <p class="text-muted">In charge of designing and programming sites, applications and web platforms and
-                    creating new features and sometimes ensuring the maintenance of the developed sites.</p>
-                </div>
+        <div class="section-title text-center mb-5">
+          <h2 class="display-4">Certifications & Education</h2>
+        </div>
+
+        <div class="row">
+
+          <!-- Certifications Column -->
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <h4 class="card-title"><i class="fas fa-certificate text-primary"></i> Certifications</h4>
+                <ul class="list-unstyled mt-3">
+                  <li class="mb-3"><i class="fas fa-award text-primary"></i> AWS Certified Solutions Architect</li>
+                  <li class="mb-3"><i class="fas fa-cloud text-primary"></i> Google Cloud Professional Developer</li>
+                  <li class="mb-3"><i class="fas fa-user-tie text-primary"></i> Certified Scrum Master (CSM)</li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <!-- Experience 2 -->
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="experience-card shadow-sm">
-                <div class="experience-img-container">
-                  <img src="assets/img/portfolio/callcanter.jpeg" class="img-fluid rounded"
-                    alt="Frontend Developer Experience" />
-                </div>
-                <div class="experience-txt p-4">
-                  <h4 class="text-primary">Account Manager at CallCenter</h4>
-                  <span>Sept 2023 - Dec 2023</span>
-                  <p class="text-muted">Responsible for a client portfolio to be developed, managed and retained.</p>
-                </div>
+          <!-- Education Column -->
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <h4 class="card-title"><i class="fas fa-graduation-cap text-primary"></i> Education</h4>
+                <ul class="list-unstyled mt-3">
+                  <li class="mb-3"><i class="fas fa-university text-primary"></i> BSc in Computer Engineering and
+                    Networks</li>
+                  <li class="mb-3"><i class="fas fa-laptop-code text-primary"></i> Master's in Web Development</li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <!-- Experience 3 -->
-            <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="experience-card shadow-sm">
-                <div class="experience-img-container">
-                  <img src="assets/img/experience-3.jpg" class="img-fluid rounded"
-                    alt="Full Stack Developer Experience" />
-                </div>
-                <div class="experience-txt p-4">
-                  <h4 class="text-primary">Full Stack Developer at InnovateX</h4>
-                  <p class="text-muted">Led the development of a dynamic e-commerce platform, integrated payment
-                    gateways, and improved overall performance by 25%.</p>
-                </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Certifications and Education Section -->
+
+
+    <!-- Blog or Publications Section -->
+    <div id="blog-publications" class="paddsection bg-light">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2 class="display-4">Blog & Publications</h2>
+        </div>
+
+        <div class="row">
+
+          <!-- Blog Post 1 -->
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <a href="blog-single.html">
+                <img src="assets/img/blog-post-1.jpg" class="card-img-top img-responsive" alt="Blog Post 1" />
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="blog-single.html" class="text-dark text-decoration-none">Understanding API Integrations</a>
+                </h4>
+                <p class="card-text">A deep dive into API integration techniques for modern web apps, covering best
+                  practices and common pitfalls.</p>
               </div>
-            </div> -->
+              <div class="card-footer text-muted">
+                Published on: September 12, 2024
+              </div>
+            </div>
+          </div>
 
+          <!-- Blog Post 2 -->
+          <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+              <a href="blog-single.html">
+                <img src="assets/img/blog-post-2.jpg" class="card-img-top img-responsive" alt="Blog Post 2" />
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="blog-single.html" class="text-dark text-decoration-none">Building Scalable Web
+                    Applications</a>
+                </h4>
+                <p class="card-text">A guide on developing scalable web applications using React and Node.js,
+                  emphasizing performance and modularity.</p>
+              </div>
+              <div class="card-footer text-muted">
+                Published on: October 5, 2024
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Blog or Publications Section -->
+
+
+    <!-- Testimonials and References Section -->
+    <div id="testimonials-references" class="paddsection">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Testimonials & References</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <blockquote class="testimonial">
+              <p>"Richard is a highly skilled developer. His expertise in front-end technologies helped our project
+                succeed." – John Doe, CEO of TechCorp</p>
+            </blockquote>
+          </div>
+          <div class="col-md-6">
+            <blockquote class="testimonial">
+              <p>"Working with Richard has been a fantastic experience. His problem-solving skills are unmatched." –
+                Jane Smith, Lead Developer at CreativeStudio</p>
+            </blockquote>
           </div>
         </div>
       </div>
     </div>
-
-    <style>
-      .experience-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background-color: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-      }
-
-      .experience-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      }
-
-      .experience-img-container {
-        height: 200px;
-        overflow: hidden;
-        position: relative;
-      }
-
-      .experience-img-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.4s ease;
-      }
-
-      .experience-card:hover .experience-img-container img {
-        transform: scale(1.05);
-      }
-
-      .experience-txt {
-        text-align: left;
-      }
-
-      .experience-txt h4 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
-
-      .experience-txt p {
-        margin-bottom: 0;
-      }
-    </style>
-
-    <!-- End Journal Section -->
+    <!-- End Testimonials and References Section -->
 
     <!-- ======= Contact Section ======= -->
     <div id="contact" class="paddsection">
@@ -496,20 +680,20 @@
             <div class="col-lg-6">
               <div class="contact-contact">
                 <!-- <ul class="contact-details">
-                    <li><span>23 Main, Street</span></li>
-                    <li><span>New York, United States</span></li>
-                    <li><span>+88 01912704287</span></li>
-                    <li><span>example@example.com</span></li>
-                  </ul> -->
+                        <li><span>23 Main, Street</span></li>
+                        <li><span>New York, United States</span></li>
+                        <li><span>+88 01912704287</span></li>
+                        <li><span>example@example.com</span></li>
+                      </ul> -->
               </div>
 
               <div style="
-                    max-width: 100%;
-                    overflow: hidden;
-                    color: red;
-                    width: 500px;
-                    height: 500px;
-                  ">
+                        max-width: 100%;
+                        overflow: hidden;
+                        color: red;
+                        width: 500px;
+                        height: 500px;
+                      ">
                 <div id="embedmap-canvas" style="height: 100%; width: 100%; max-width: 100%">
                   <iframe style="height: 100%; width: 100%; border: 0" frameborder="0"
                     src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
@@ -576,6 +760,23 @@
       </div>
     </div>
     <!-- End Contact Section -->
+
+
+    <!-- Downloadable CV Section -->
+    <div id="download-cv" class="paddsection bg-dark text-light py-5">
+      <div class="container text-center">
+        <h2 class="display-4 mb-4 text-light">Download My CV</h2>
+        <p class="lead mb-5">Get a detailed overview of my professional background, skills, and experiences.</p>
+        <a href="assets/cv/Richard_NGOUBADJAMBO_CV_Gabon.pdf"
+          class="btn btn-lg btn-outline-light rounded-pill shadow-sm" download>
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+    <!-- End Downloadable CV Section -->
+
+
+
   </main>
   <!-- End #main -->
 
