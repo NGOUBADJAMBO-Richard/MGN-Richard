@@ -641,6 +641,104 @@ p {
 }
 
 /*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+/* Styles pour les cartes de service/entreprise */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%; /* Assure que toutes les cartes ont la même hauteur dans une rangée */
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-img-container {
+  height: 200px; /* Hauteur fixe pour les images */
+  overflow: hidden;
+  position: relative;
+}
+
+.service-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recadre l'image pour couvrir le conteneur */
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-img-container img {
+  transform: scale(1.05); /* Effet de zoom léger au survol */
+}
+
+.service-txt {
+  text-align: left;
+  flex-grow: 1; /* Permet au texte de prendre l'espace restant */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pour pousser le paragraphe vers le bas si nécessaire */
+}
+
+.service-txt h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-txt span {
+  font-size: 0.9rem;
+  color: #6c757d; /* Couleur pour le sous-titre/slogan */
+  margin-bottom: 1rem;
+  display: block; /* Pour s'assurer qu'il prend sa propre ligne */
+}
+
+.service-txt p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+/* Styles généraux du portfolio (si non déjà définis ailleurs) */
+.paddsection {
+  padding-top: 60px; /* Ajustez selon votre mise en page globale */
+  padding-bottom: 60px; /* Ajustez selon votre mise en page globale */
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333; /* Couleur de titre par défaut */
+}
+
+.section-title p {
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments (Tailwind-like classes are assumed to be handled by framework) */
+/* These are basic Bootstrap/Flexbox responsive classes */
+@media (max-width: 991.98px) {
+  /* Medium devices (tablets) */
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Small devices (phones) */
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .service-card {
+    margin-bottom: 1.5rem; /* Espace entre les cartes sur mobile */
+  }
+}
+
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 #portfolio {
