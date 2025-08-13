@@ -148,6 +148,120 @@ p {
   padding-top: 140px;
 }
 
+.experience-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.experience-img-container {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.experience-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.experience-card:hover .experience-img-container img {
+  transform: scale(1.05);
+}
+
+.experience-txt {
+  text-align: left;
+}
+
+.experience-txt h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-txt p {
+  margin-bottom: 0;
+}
+
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.skill-text {
+  font-size: 1rem;
+}
+
+.skill-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.skill-link:hover {
+  text-decoration: underline;
+}
+
+.skill-card .card-body {
+  padding: 2rem;
+}
+.skill-card .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.skill-card .list-unstyled {
+  padding-left: 0;
+}
+.skill-card .list-unstyled li {
+  margin-bottom: 1rem;
+}
+.skill-card .list-unstyled li i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #007bff;
+}
+.skill-card .list-unstyled li span {
+  font-size: 1rem;
+  color: #333;
+}
+.skill-card .list-unstyled li span a {
+  color: #007bff;
+  text-decoration: none;
+}
+.skill-card .list-unstyled li span a:hover {
+  text-decoration: underline;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio (change this for a different ratio) */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 2rem; /* Optional: adds space below the map */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
